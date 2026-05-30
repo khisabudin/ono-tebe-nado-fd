@@ -173,7 +173,7 @@ justify-content: space-around;
   margin-top: 35px;
 }
 .logo-circle img {
-  width: 148px;       
+  width: 148px;
   height: 114px;
 }
 .about-about {
@@ -235,7 +235,7 @@ justify-content: space-around;
   text-underline-offset: 3px; /* смещает линию вниз на 5 px */
   cursor: pointer; /* Курсор в виде указателя для кликабельности */
 }
-.nav-item:hover {
+.footer-item:hover {
   text-decoration: none;
 }
 .socials {

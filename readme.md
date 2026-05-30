@@ -1,1 +1,0 @@
-https://github.com/khisabudin/ono-tebe-nado-fd

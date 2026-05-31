@@ -12,49 +12,59 @@
   <body>
     <header>
       <nav class="nav">
-        <a class="nav-item">главная</a>
-        <a class="nav-item">посмотреть лоты</a>
-        <a class="nav-item">об аукционе</a>
+        <ul class="nav-list">
+          <li class="nav-item link--active">
+            <a>главная</a>
+          </li>
+          <li class="nav-item">
+            <a href="/lots">посмотреть лоты</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about">об аукционе</a>
+          </li>
+        </ul>
       </nav>
       <a>
         <img src="images/logo-black.svg" alt="logo">
       </a>
-      <address>
+      <address class="header__adress">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <a> наб. Принсенграхт 263-265, Амстердам</a>
+        <p> наб. Принсенграхт 263-265, Амстердам</p>
       </address>
     </header>
     <main>
-      <section class="cover">
+      <section class="cover lense">
         <div class="cover-title">
-          <h1 class="cover-title-left">оно</h1>
-          <h1 class="cover-title-center">тебе</h1>
-          <h1 class="cover-title-right">надо</h1>
+          <h1>
+            <span class="cover-title-left">оно</span>
+            <span class="cover-title-center">тебе</span>
+            <span class="cover-title-right">надо</span>
+          </h1>
         </div>
         <div class="description">
-          <a><span>аукцион вещей,</span> <span class="believe">в которые никто не верил</span></a>
-          <button>сделать ставку</button>
+          <p><span>аукцион вещей,</span> <span class="believe">в которые никто не верил</span></p>
+          <button type="button">сделать ставку</button>
         </div>
       </section>
       <section class="menu-cards">
          <h2 class="lots">лоты</h2>
-          <div class="cards">
-            <div class="card card-movie">
+          <ul class="cards">
+            <li class="card card-movie lense">
               <h3 class="card-title">Фильм режиссёра, который бросил киношколу</h3>
               <p class="card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
-            </div>
-            <div class="card card-movie card-book">
+            </li>
+            <li class="card card-movie card-book lense">
               <h3 class="card-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
               <p class="card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-            </div>
-            <div class="card card-picture">
+            </li>
+            <li class="card card-picture lense">
               <h3 class="card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
               <p class="card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="more">
-            <p>посмотреть больше</p>
+            <a>посмотреть больше</a>
           </div>
       </section>
       <section class="about">
@@ -62,14 +72,10 @@
           <img src="images/logo-white.svg" alt="logo">
         </div>
         <div class="about-about">
-          <h4 class="about-title">Об аукционе</h4>
+          <h2 class="about-title">Об аукционе</h2>
             <div class="description-block">
-              <div>
-                <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
-              </div>
-              <div>
-                <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
-              </div>
+              <p class="description-text">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+              <p class="description-text">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
             </div>      
         </div>
       </section>
@@ -81,18 +87,18 @@
         <a> наб. Принсенграхт 263-265, Амстердам</a>
       </address>
       <nav class="nav-footer">
-        <a class="footer-item">главная</a>
+        <a class="footer-item link--active">главная</a>
         <a class="footer-item">посмотреть лоты</a>
         <a class="footer-item">об аукционе</a>
       </nav>
       <div class="socials">
-        <a>
+        <a class="footer-img" target="_blank">
           <img src="images/yt.svg" class="footer-img" alt="yt">
         </a>
-        <a class="footer-img">
+        <a class="footer-img" target="_blank">
           <img src="images/vk.svg" class="footer-img" alt="vk">
         </a>
-        <a class="footer-img">
+        <a class="footer-img" target="_blank">
           <img src="images/pinterest.svg" class="footer-img" alt="pinterest">
         </a>
       </div>

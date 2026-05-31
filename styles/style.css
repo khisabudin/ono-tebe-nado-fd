@@ -9,6 +9,20 @@
 .nav-hover:hover {
   text-decoration: none;
 }
+.nav-list {
+  list-style: circle;
+  display: flex;
+  gap: 32px;
+}
+.header__adress {
+  padding: 2px;
+  width: 240px;
+  max-width: 240px;
+  margin-top: 45px;
+  margin-right: 50px;
+  margin-bottom: 46px;
+  gap: 1px;
+}
 .cover {
   display: flex;
   flex-direction: column;
@@ -16,14 +30,14 @@
   align-items:baseline;
   width: 1100px;
   min-height: 757px;
-  background-image: url('X:/dev/first-sprint/ono-tebe-nado-fd/images/cover.jpg');
+  background-image: url('../images/cover.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   margin-bottom: 180px;
 }
-.cover::before {
+.lense::before {
   content: "";
   display: block;
   width: 100%;
@@ -35,35 +49,45 @@
 }
 .cover-title {
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 1100px;
-  height: 385px;
+  width: 1000px;
   color: #fff;
-  margin-top: 165px;
+  margin-top: 155px;
   text-transform: uppercase;
   letter-spacing: 30%;
   font-weight: bold;
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  gap: 0;
+  line-height: 135px;
 }
 .cover-title-left {
+  grid-row: 1;
+  display: flex;
+  align-items: center;
   margin-left: 50px;
 }
 .cover-title-center {
-  margin: auto;
-  padding-left: 30px
+  grid-row: 2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 53px;
 }
 .cover-title-right {
+  grid-row: 3;
+  text-align: right;
   display: flex;
   justify-content: flex-end;
-  margin-right: 20px;
+  text-align: right;
+  align-items: center;
+  padding-left: 664px;
 }
 .description {
   z-index: 1;
   color:#fff;
   font-size: 22px;
   width: 1100px;
-  height: 51px;
   margin-bottom: 50px;
   margin-left: 0px;
   padding-left: 50px;
@@ -88,12 +112,14 @@ margin:auto;
 width: 1080px;
 display: flex;
 justify-content: space-around;
+flex-wrap: wrap;
+row-gap: 20px;
 }
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 596px;
+  min-height: 596px;
   width: 334px;
   border: 1px;
   color: #fff;
@@ -112,7 +138,6 @@ justify-content: space-around;
   font-size: 22px;
   z-index: 2;
   font-weight: 700;
-  font-style: bold;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
 }
@@ -125,23 +150,13 @@ justify-content: space-around;
   margin-bottom: 48px;
 }
 .card-movie {
-  background-image: url(X:/dev/first-sprint/ono-tebe-nado-fd/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
 }
 .card-book {
-  background-image: url(X:/dev/first-sprint/ono-tebe-nado-fd/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
 }
 .card-picture {
-  background-image: url(X:/dev/first-sprint/ono-tebe-nado-fd/images/card-lot-03.jpg);
-}
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6); /* 60 % затемнение — регулируется четвёртым параметром */
-  z-index: 1;
+  background-image: url(../images/card-lot-03.jpg);
 }
 .more {
   text-decoration: underline;
@@ -154,13 +169,26 @@ justify-content: space-around;
 .more:hover {
   text-decoration: none;
 }
+button {
+  color:#fff;
+  font: inherit;
+  position: relative;
+  margin-right: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  text-transform: uppercase;
+  width: 256px;
+  min-height: 52px;
+  box-shadow: none;                    /* убираем тень */
+  border: 1px solid #fff;             /* чёткая граница: 2 px, сплошной стиль, цвет #333 */
+  cursor: pointer;                     /* курсор в виде указателя при наведении */
+  font-size: 22px;                    /* размер текста */
+}
 .about {
-  height: 595px;
   width: 1052px;
   display: flex;
   position: relative;
   margin-left: 24px;
-  margin-bottom: 180px;
+  margin-bottom: 158px;
 }
 .logo-circle {
   width: 240px;          /* задайте нужный размер круга */
@@ -178,7 +206,6 @@ justify-content: space-around;
 }
 .about-about {
   width: 693px;
-  height: 449px;
   margin-top: 133px;
   margin-left:40px;
 }
@@ -194,7 +221,6 @@ justify-content: space-around;
   margin-left: 32px;
   padding-right: 5px;
   width: 693px;
-  height: 312px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -203,20 +229,19 @@ justify-content: space-around;
   letter-spacing: 0%;
   font-weight: 400;
 }
+.description-text {
+  margin-bottom: 24px;
+}
 .footer-img {
   width: 48px;
   height: 48px;
 }
 .footer-address {
   width: 265px;
-  height: 98px;
   margin:0;
   padding: 0px;
   margin-left: 50px;
   border:1px;
-  line-height: 24px;
-  font-size: 18px;
-  text-underline-offset: 3px;
 }
 .custom-underline {
   text-underline-offset: 4px;
@@ -225,10 +250,12 @@ justify-content: space-around;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: flex-start;
   width: 164px;
-  height: 64px;
-  gap: 2px;
-  margin-left: 5px;
+  margin-top: 3px;
+  margin-left: 0px;
+  row-gap: 3px;
+  margin-right: 24px;
 }
 .footer-item {
   text-decoration: underline;
@@ -247,4 +274,8 @@ justify-content: space-around;
 }
 .menu-cards {
   margin-bottom: 120px;
+}
+.link--active {
+  text-decoration: none;
+  list-style: none;
 }

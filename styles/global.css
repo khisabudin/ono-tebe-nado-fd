@@ -29,31 +29,15 @@ img {
   height: 105px;
   width: 148px;
 }
-button {
-  color:#fff;
-  font: inherit;
-  position: relative;
-  margin-right: 0px;
-  background-color: rgba(0, 0, 0, 0);
-  text-transform: uppercase;
-  width: 256px;
-  height: 52px;
-  box-shadow: none;                    /* убираем тень */
-  border: 1px solid #fff;             /* чёткая граница: 2 px, сплошной стиль, цвет #333 */
-  cursor: pointer;                     /* курсор в виде указателя при наведении */
-  font-size: 22px;                    /* размер текста */
-}
 header {
   background-color:#fff;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   width: 1100px;
-  height: 293px;
   align-items: center;
-  padding: 0;
+  padding: 50px 0px 50px 0px;
 }
 nav {
-  list-style: circle;
   font-family: url(../fonts/Raleway-Bold.woff);
   font-weight: 400;
   font-style: normal;
@@ -68,28 +52,22 @@ nav {
   margin-bottom: 3px;
 }
 address {
-  padding: 2px;
   font-size: 18px;
-  width: 240px;
-  height: 98px;
   font-style: normal;
-  max-width: 240px;
   display:flex;
   flex-direction: column;
   align-items: flex-start;
   margin: auto;
-  margin-top: 95px;
-  margin-right: 50px;
   text-underline-offset: 3px;
   gap: 1px;
   line-height: 24px;
 }
 footer {
   width: 1100px;
-  height: 180px;
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 0px;
+  padding-bottom: 81px;
 }
 h1 {
   color: #fff;

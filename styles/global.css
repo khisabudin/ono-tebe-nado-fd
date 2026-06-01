@@ -24,10 +24,7 @@ blockquote {
 }
 a {
   color: inherit;
-}
-img {
-  height: 105px;
-  width: 148px;
+  text-decoration: none;
 }
 header {
   background-color:#fff;
@@ -38,7 +35,7 @@ header {
   padding: 50px 0px 50px 0px;
 }
 nav {
-  font-family: url(../fonts/Raleway-Bold.woff);
+  font-family: Raleway;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
